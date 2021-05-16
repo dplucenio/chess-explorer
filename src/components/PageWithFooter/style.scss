@@ -1,0 +1,30 @@
+.PageWithFooter {
+  min-height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  .Main {
+    width: 100%;
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .Footer {
+    font-size: 1.3em;
+    font-weight: 800;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 1.3em;
+    color: #49ec73;
+    cursor: pointer;
+    a {
+      margin-left: 6px;
+    }
+  }
+}
