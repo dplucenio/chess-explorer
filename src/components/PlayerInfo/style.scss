@@ -1,0 +1,24 @@
+.PlayerInfo {
+  margin: 100px 0;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+
+  position: relative;
+
+  color: violet;
+  height: 300px;
+  border: 1px solid #49ec73;
+  width: 100%;
+  // max-width: 560px;
+
+  img {
+    position: absolute;
+    top: -50px;
+    width: 100px;
+    height: 100px;
+    border-radius: 50px;
+  }
+}
