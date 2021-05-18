@@ -1,12 +1,14 @@
 import { useState } from 'react';
 import chessApi from '../../services/chessApi';
 import PlayerInfo from '../PlayerInfo';
+import PopContainer from '../PopContainer';
 import './style.scss'
 
 
 function PlayerSearch() {
 
   const [username, setUsername] = useState('');
+  const [a,setA] = useState(false);
 
   const handleUsernameChange = event => {
     setUsername(event.target.value);
@@ -31,7 +33,10 @@ function PlayerSearch() {
         <input type="button" value="Search" onClick={handleSubmit} />
       </form>
 
-      <PlayerInfo />
+      <PopContainer timeout={2000} visible={a}>
+        <PlayerInfo />
+      </PopContainer>
+      <button onClick={e=>setA(o => !o)}>BUTAO</button>
     </div>
   )
 }
