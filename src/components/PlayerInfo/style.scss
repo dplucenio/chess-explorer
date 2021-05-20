@@ -1,14 +1,15 @@
 .PlayerInfo {
   margin: 100px 0;
+  padding: 90px 0;
 
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: center;
+  justify-content: end;
 
   position: relative;
 
-  color: violet;
+  color: #eee;
   background-color: #253156;
   height: 300px;
   width: 90%;

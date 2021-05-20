@@ -3,6 +3,7 @@ form {
   max-width: 280px; 
   display: flex;
   flex-direction: column;
+  transition: 200ms ease;
 
   input {
     font-size: 1.4rem;

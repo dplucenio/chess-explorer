@@ -9,14 +9,25 @@ function SearchForm({ handleSuccessfulGet }) {
     setUsername(event.target.value);
   }
 
+  const user = {};
   const handleSubmit = event => {
     event.preventDefault();
     chessApi.get(`/player/${username}`)
       .then(response => {
-        handleSuccessfulGet(response.data);
+        user.info = response.data;
+        return chessApi.get(`/player/${username}/stats`)
+      })
+      .then(response => {
+        user.stats = response.data;
+        return user;  
+      })
+      .then(user => {
+        handleSuccessfulGet(user);
       })
       .catch(error => console.log(error));
   }
+
+
 
   return (
     <form onSubmit={handleSubmit}>
