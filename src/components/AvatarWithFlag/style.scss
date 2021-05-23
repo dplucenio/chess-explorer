@@ -1,0 +1,31 @@
+.AvatarWithFlag {
+  position: relative;
+
+  .FlagBorder {
+    position: absolute;
+    bottom: -5px;
+    right: -2px;
+    width: 46px;
+    height: 46px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .FlagContainer {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background-size: 160%;
+    background-position: center;
+    box-shadow: 0 2px 6px 4px #0000003b;
+    
+  }
+
+  .flag {
+    width: 32px;
+    width: 32px;
+    object-fit: cover;
+  }
+}

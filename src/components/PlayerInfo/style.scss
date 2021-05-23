@@ -1,26 +1,29 @@
 .PlayerInfo {
-  margin: 100px 0;
+  margin: 75px 0 0px 0;
   padding: 90px 0;
-
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: end;
-
   position: relative;
 
   color: #eee;
   background-color: #253156;
-  height: 300px;
   width: 90%;
-  max-width: 560px;
-  border-radius: 20px;;
+  max-width: 280px;
+  border-radius: 20px;
 
-  img {
+  .AvatarWithFlag {
     position: absolute;
     top: -40px;
-    width: 120px;
-    height: 120px;
-    border-radius: 120px;
   }
+}
+
+.InnerContainer {
+  width: 100%;
+  height: 100%;
+  padding: 1rem 3rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }

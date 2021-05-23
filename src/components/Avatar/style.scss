@@ -1,0 +1,16 @@
+.Avatar {
+  width: 130px;
+  height: 130px;
+  border-radius: 130px;
+  background-color: #49ec73;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  box-shadow: 0 2px 6px 4px #49ec724f;
+
+  img {
+    width: 120px;
+    height: 120px;
+    border-radius: 120px;
+  }
+}

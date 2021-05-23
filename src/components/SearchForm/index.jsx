@@ -1,5 +1,8 @@
 import { useState } from "react";
 import chessApi from '../../services/chessApi';
+import { baseURL as countryFlagsBaseUrl } from '../../services/countryFlagsApi';
+import axios from 'axios';
+import './style.scss';
 
 function SearchForm({ handleSuccessfulGet }) {
 
@@ -19,7 +22,20 @@ function SearchForm({ handleSuccessfulGet }) {
       })
       .then(response => {
         user.stats = response.data;
-        return user;  
+        return user;
+      })
+      .then(user => {
+        console.log(user);
+        return axios.get(user.info.country);
+      })
+      .then(response => {
+        let { code, name } = response.data;
+        user.country = {
+          code,
+          name,
+          flag: code === 'XX' ? null : `${countryFlagsBaseUrl}/${code}/flat/64.png`
+        }
+        return user;
       })
       .then(user => {
         handleSuccessfulGet(user);
