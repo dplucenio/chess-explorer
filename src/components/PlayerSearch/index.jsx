@@ -18,8 +18,7 @@ function PlayerSearch() {
     <div className='PlayerSearch'>
 
       <SearchForm handleSuccessfulGet = {handleSuccessfulGet}/>
-
-      <PopContainer timeout={0} visible={true}>
+      <PopContainer timeout={0} visible={user!=null}>
         <PlayerInfo user={user}/>
       </PopContainer>
     </div>

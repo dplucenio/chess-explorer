@@ -5,19 +5,19 @@ form {
   flex-direction: column;
   transition: 200ms ease;
 
-  input {
+  .BaseInput {
     font-size: 1.4rem;
     text-align: center;
     border: 0;
     box-shadow: none;
     padding: 8px;
     border-radius: 8px;
-    & + input {
+    & + .BaseInput {
       margin: 4px 0;
     }
   }
 
-  input[type="button"] {
+  button.BaseInput {
     font-weight: 800;
     color: #fff;
     background-color: #9629ed;

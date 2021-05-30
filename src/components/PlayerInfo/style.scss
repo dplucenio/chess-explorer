@@ -11,9 +11,10 @@
   background-color: #253156;
   width: 90%;
   max-width: 280px;
+  min-height: 300px;
   border-radius: 20px;
 
-  .AvatarWithFlag {
+  a {
     position: absolute;
     top: -40px;
   }

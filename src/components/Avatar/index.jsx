@@ -1,10 +1,10 @@
 import './style.scss'
 
 
-function Avatar({src}) {
+function Avatar({ src }) {
   return (
     <div className="Avatar">
-      <img src={src} alt=""/>
+        <img src={src} alt="" />
     </div>
   );
 }

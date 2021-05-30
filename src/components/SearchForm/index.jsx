@@ -3,10 +3,12 @@ import chessApi from '../../services/chessApi';
 import { baseURL as countryFlagsBaseUrl } from '../../services/countryFlagsApi';
 import axios from 'axios';
 import './style.scss';
+import Loader from "react-loader-spinner";
 
 function SearchForm({ handleSuccessfulGet }) {
 
   const [username, setUsername] = useState('');
+  const [status, setStatus] = useState('idle');
 
   const handleUsernameChange = event => {
     setUsername(event.target.value);
@@ -14,6 +16,7 @@ function SearchForm({ handleSuccessfulGet }) {
 
   const user = {};
   const handleSubmit = event => {
+    setStatus('fetching')
     event.preventDefault();
     chessApi.get(`/player/${username}`)
       .then(response => {
@@ -39,8 +42,11 @@ function SearchForm({ handleSuccessfulGet }) {
       })
       .then(user => {
         handleSuccessfulGet(user);
+        setStatus('idle');
       })
-      .catch(error => console.log(error));
+      .catch(error => {
+        setStatus('idle');
+      });
   }
 
 
@@ -48,12 +54,24 @@ function SearchForm({ handleSuccessfulGet }) {
   return (
     <form onSubmit={handleSubmit}>
       <input
+        className="BaseInput"
         type="text"
         placeholder="username"
         value={username}
         onChange={handleUsernameChange}
       />
-      <input type="button" value="Search" onClick={handleSubmit} />
+      <button
+        className="BaseInput"
+        onClick={handleSubmit}
+        disabled={status === 'fetching'}>
+        {status === 'idle'
+          ? 'Search'
+          : <Loader type="Grid" color="#FFF" height={`1.2rem`}
+          />
+        }
+
+      </button>
+
     </form>
   );
 }
