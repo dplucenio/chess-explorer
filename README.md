@@ -9,6 +9,8 @@ Esse é um pequeno projeto para estudo, onde um projeto React é configurado do 
 Vamos:
 
  - configurar o Babel para transpilação de códigos ES6 e JSX.
+ - configurar o webpack para possibilitar a importação de arquivos jsx, scss e imagens nos módulos de javascript e gerar o bundle para distribuição da aplicação.
+ - configuração do webpack-dev-server e react-refresh-webpack-plugin para melhorar o processo de desenvolvimento.
 
 
 
