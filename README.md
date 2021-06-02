@@ -12,6 +12,16 @@ Vamos:
  - configurar o webpack para possibilitar a importação de arquivos jsx, scss e imagens nos módulos de javascript e gerar o bundle para distribuição da aplicação.
  - configuração do webpack-dev-server e react-refresh-webpack-plugin para melhorar o processo de desenvolvimento.
 
+## Configurando o Babel
 
+## Configurando o webpack
 
+### Importando arquivos jsx
 
+### Importando arquivos scss
+
+### Importando arquivos de imagem
+
+## webpack dev server
+
+### fast refresh
