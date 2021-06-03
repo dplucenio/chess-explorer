@@ -3,7 +3,7 @@
 This is a small project for studying and future reference on webpack configuration purposes, where a React project is setup from scratch, without tools like [create-react-app](https://create-react-app.dev). The goal is to create a SPA consuming [chess.com](chess.com) and public [countryflags.io](countryflags.io) APIs to search for chess players in the platform. The app currently looks like this:
 
 <p align="center">
-  <img height="500" src="/src/resources/demo.gif">
+  <img height="500" src="./src/resources/demo.gif">
 </p>
 
 What was done:
