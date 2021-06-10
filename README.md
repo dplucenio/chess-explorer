@@ -1,6 +1,8 @@
 # ♟️ chess-explorer
 
-This is a small project for studying and future reference on webpack configuration, where a React project is setup from scratch, without tools like [create-react-app](https://create-react-app.dev). The goal is to create a SPA consuming [chess.com](chess.com) public API to search for chess players in the platform. [countryflags.io](countryflags.io) was also use to render the player national flag. The app currently looks like this:
+[![Netlify Status](https://api.netlify.com/api/v1/badges/d1df2977-a637-4a5d-bdef-56af0fc874f7/deploy-status)](https://app.netlify.com/sites/chess-explorer/deploys)
+
+This is a small project for studying and future reference on webpack configuration, where a React project is setup from scratch, without tools like [create-react-app](https://create-react-app.dev). The goal is to create a SPA consuming [chess.com](chess.com) public API to search for chess players in the platform. [countryflags.io](countryflags.io) was also use to render the player national flag. The app was deployed and hosted in [chess-explorer.netlify.app](https://chess-explorer.netlify.app) The app currently looks like this:
 
  <p align="center">
   <img height="500" src="./src/resources/demo.gif">
