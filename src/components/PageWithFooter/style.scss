@@ -21,10 +21,15 @@
     justify-content: center;
     align-items: center;
     padding: 1.3em;
-    color: #49ec73;
-    cursor: pointer;
+
     a {
+      color: #49ec73;
+      cursor: pointer;
       margin-left: 6px;
+      text-decoration: none;
+      &:visited {
+        color: #49ec73;
+      }
     }
   }
 }

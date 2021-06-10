@@ -9,7 +9,7 @@ function PageWithFooter({ children }) {
     </div>
     <div className="Footer">
       <GithubIcon/>
-      <a>See me on github!</a>
+      <a href="https://github.com/dplucenio/chess-explorer">See me on github!</a>
     </div>
   </div>
 }
